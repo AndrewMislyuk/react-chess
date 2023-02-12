@@ -1,0 +1,24 @@
+.board {
+  width: calc(64px * 8 + 48px);
+  height: calc(64px * 8 + 48px);
+  background: #f0d9b5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__wrapper {
+    width: calc(64px * 8);
+    height: calc(64px * 8);
+    display: flex;
+    flex-wrap: wrap;
+    border: 0.5px solid #1f2747;
+  }
+}
+
+.black {
+  background: #b58863;
+}
+
+.white {
+  background: #f0d9b5;
+}

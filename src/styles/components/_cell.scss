@@ -1,0 +1,132 @@
+.cell {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 48px;
+    height: 48px;
+    position: relative;
+  }
+}
+
+.numbers,
+.letters {
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+    font-size: 16px;
+  }
+}
+
+.numbers {
+  &::before {
+    left: -16px;
+  }
+
+  &.cell0 {
+    &::before {
+      content: "1";
+    }
+  }
+
+  &.cell1 {
+    &::before {
+      content: "2";
+    }
+  }
+
+  &.cell2 {
+    &::before {
+      content: "3";
+    }
+  }
+
+  &.cell3 {
+    &::before {
+      content: "4";
+    }
+  }
+
+  &.cell4 {
+    &::before {
+      content: "5";
+    }
+  }
+
+  &.cell5 {
+    &::before {
+      content: "6";
+    }
+  }
+
+  &.cell6 {
+    &::before {
+      content: "7";
+    }
+  }
+
+  &.cell7 {
+    &::before {
+      content: "8";
+    }
+  }
+}
+
+.letters {
+  &::after {
+    top: -21px;
+  }
+
+  &.cell0 {
+    &::after {
+      content: "A";
+    }
+  }
+
+  &.cell1 {
+    &::after {
+      content: "B";
+    }
+  }
+
+  &.cell2 {
+    &::after {
+      content: "C";
+    }
+  }
+
+  &.cell3 {
+    &::after {
+      content: "D";
+    }
+  }
+
+  &.cell4 {
+    &::after {
+      content: "E";
+    }
+  }
+
+  &.cell5 {
+    &::after {
+      content: "F";
+    }
+  }
+
+  &.cell6 {
+    &::after {
+      content: "G";
+    }
+  }
+
+  &.cell7 {
+    &::after {
+      content: "H";
+    }
+  }
+}

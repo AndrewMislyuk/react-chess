@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fafafc;
+}
+
+.title {
+  width: 302px;
+  position: absolute;
+  left: 50%;
+  top: 80px;
+  margin-left: -151px;
+  text-align: center;
+}
